@@ -1,0 +1,18 @@
+<section class="section">
+        <table>
+            <thead>
+                <tr>
+                    <td>Character Name</td>
+                    <td>Character Description</td>
+                </tr>
+            </thead>
+    
+            ${theGang.map(jabronie => 
+                `<tr>
+                    <td>${jabronie.name}</td> 
+                    <td>${jabronie.description}</td>
+                </tr>`
+                ).join('')}
+        </table>
+    
+    </section>

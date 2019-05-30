@@ -1,0 +1,18 @@
+<section class="section">
+    <table>
+        <thead>
+            <tr>
+                <td>Character Name</td>
+                <td>Character Job</td>
+            </tr>
+        </thead>
+
+        ${listOfCharacters.map(character => 
+            `<tr>
+                <td>${character.name}</td> 
+                <td>${character.job}</td>
+            </tr>`
+            ).join('')}
+    </table>
+
+</section>

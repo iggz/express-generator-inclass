@@ -7,6 +7,10 @@ const express = require('express'),
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const app = express();
+const dogsRouter = require('./routes/dogs');
+const officeRouter = require('./routes/office');
+const sunnyRouter = require('./routes/sunny');
+const ceosRouter = require('./routes/ceos');
 
 app.engine('html', es6Renderer);
 app.set('views', 'views');
@@ -20,5 +24,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/dogs', dogsRouter);
+app.use('/office', officeRouter);
+app.use('/sunny', sunnyRouter);
+app.use('/ceos', ceosRouter);
 
 module.exports = app;

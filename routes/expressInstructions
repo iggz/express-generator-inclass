@@ -4,9 +4,11 @@
 // first step is global
 
 npm install express-generator -g
+npm install nodemon 
 express --no-view express-generator-class
 npm install
 npm i express-es6-template-engine --save
+
 
 // then do this to run it
 npm run dev
